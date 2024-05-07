@@ -1,0 +1,329 @@
+/* ----------HORIZONTAL MENU---------------- */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab a {
+    font-family: "Urbanist", sans-serif;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-decoration: none; 
+    color: black; 
+}
+
+.tab a:hover {
+    background-color: #003caa;
+    color: white;
+}
+
+.tab a.active {
+    background-color: #003caa;
+    color: white;
+}
+
+/*LOGO*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-left: 10px; 
+    margin-top: 10px; 
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: auto;
+}
+/**/
+
+
+/** make sure BODY is the same for every page**/
+
+body {
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+}
+
+hr {
+    border: none; 
+    border-top: 1px solid #000; 
+    margin: 20px 0;
+}
+
+.two-line {
+    width: 650px;
+}
+
+.two-line-2 {
+    width: 420px;
+    font-size: x-small;
+    margin-left: 7.5rem; /*adjust to align with image*/
+    position: relative;
+    background-color: #DFEAFF;
+    padding: 10px;
+}
+
+.section {
+    display: flex; 
+    align-items: flex-start;
+    padding: 10px;
+}
+
+/* .blurb {
+    position: relative;
+    font-size: x-small;
+} */
+
+.title  {
+    font-size: 3.5em;
+}
+/*START OF tech drawing*/
+
+.image-wrapper {
+    position: relative; 
+    margin-right: 10px;  
+    margin-top: 10px;  
+    width: 45%; 
+    height: auto; 
+}
+
+.image-wrapper img {
+    width: 100%; 
+    height: auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #003caa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover,
+.prev-btn:focus {
+    background-color: white;
+    color: #003caa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.next-btn:hover,
+.next-btn:focus {
+    background-color: white;
+    color: #003caa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #003caa;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*END OF tech drawing*/
+
+.heading-line .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000; 
+}
+
+/*---------ROW GRID--------*/
+
+.image-grid {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.grid-item {
+    flex: 0 0 calc(25% - 10px); 
+    margin-bottom: 20px; 
+    margin-right: 10px; 
+}
+
+.grid-item:last-child {
+    margin-right: 0; 
+}
+
+.grid-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+/*-- START PACKAGING GRID---*/
+
+.to-expect  {
+    color: white;
+    font-size: 5rem;
+    margin: 0; 
+    padding: 10px;
+}
+
+.expect {
+    color: white;
+    font-size: large;
+    margin: 0; 
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    width: 93%;
+}
+
+.packaging {
+    /* margin-top: 20px; */
+    background-color: #003caa;
+    padding: 20px 0;
+}
+
+.packaging h3 {
+    color: white;
+    /* margin-bottom: 10px; */
+    background-color: #003caa;
+    padding: 10px;
+    margin: 0;
+}
+
+.packaging-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.packaging-grid-item {
+    flex-basis: calc(30% - 10px);
+    margin: 5px; 
+    text-align: center;
+    /* border: 1px solid red;  */
+    background-color: white;
+    padding: 5px; 
+    box-sizing: border-box; 
+}
+
+.packaging-grid-item p {
+    margin: 0; 
+    color: #003caa;
+    padding: 10px;
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.packaging-grid-item img {
+    /* border: 1px solid red;  */
+    max-width: 100%; 
+    /* height: 100%;  */
+    height: auto;
+}
+
+.heading-line {
+    display: flex;
+    align-items: center;
+}
+
+.heading-line h3 {
+    margin-right: 10px;
+} 
+
+/*END OF PACKAGING*/
+
+
+
+.banner {
+    width: 100%;
+    max-width: 100vw; 
+    overflow: hidden; 
+    padding: 10px;
+    height: 800px;
+    box-sizing: border-box;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    display: block; 
+}
+
+
+
+
+/* 
+spline-viewer {
+    max-width: 80%; 
+    margin: 0; 
+} */
+
+

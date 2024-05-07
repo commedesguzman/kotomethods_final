@@ -1,0 +1,102 @@
+/* ----------HORIZONTAL MENU---------------- */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab a {
+    font-family: "Urbanist", sans-serif;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-decoration: none; 
+    color: black; 
+}
+
+.tab a:hover {
+    background-color: #003caa;
+    color: white;
+}
+
+.tab a.active {
+    background-color: #003caa;
+    color: white;
+}
+
+/*LOGO*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-left: 10px; 
+    margin-top: 10px; 
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: auto;
+}
+/**/
+
+
+/** make sure BODY is the same for every page**/
+
+body {
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.poster {
+    border: 8px solid #003CAA;
+    margin: 10px;
+    padding: 1rem;
+    background-color: #DFEAFF;
+}
+
+h1 {
+    margin: 0; 
+    font-size: 8rem;
+    /* line-height: 1.2;
+    height: 48px; */
+    padding: 10px;
+    color: #003CAA;
+}
+
+p {
+    margin: 0; 
+    padding-left: 30px;
+    padding-bottom: 30px;
+    width: 95%;
+    font-size:smaller;
+    color:#003CAA;
+}
+
+.cards   {
+    padding: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.card_image img {
+    width: 100%;
+    height: auto; 
+}
+
+

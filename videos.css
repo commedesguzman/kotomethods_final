@@ -1,0 +1,99 @@
+/* ----------HORIZONTAL MENU---------------- */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab a {
+    font-family: "Urbanist", sans-serif;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-decoration: none; 
+    color: black; 
+}
+
+.tab a:hover {
+    background-color: #003caa;
+    color: white;
+}
+
+.tab a.active {
+    background-color: #003caa;
+    color: white;
+}
+
+/** make sure BODY is the same for every page**/
+body {
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*****/
+
+/*LOGO*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-left: 10px; 
+    margin-top: 10px; 
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: auto;
+}
+/**/
+
+.heading-line {
+    display: flex;
+    align-items: center;
+}
+
+.heading-line h3 {
+    margin-right: 10px;
+}
+
+.heading-line .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000; 
+}
+
+.vids   {
+    padding: 10px;
+}
+
+.video-container {
+    display: flex;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.video-container iframe {
+    flex-shrink: 0;
+    width: 70%;
+    height: 500px;
+    margin-right: 20px;
+}
+
+.description-box {
+    background-color: 5px solid #003caa;
+    color: #003caa;
+    padding: 10px;
+    width: 30%;
+}
+
